@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
-export const MainContainer = styled.div`
+export const MainContainerMobile = styled.div`
+  display: none;
   height: 80px;
+  text-transform: uppercase;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 `;
 
 export const LogoNav = styled.div`
-  background-color: black;
+  background-color: white;
   height: 80px;
   display: flex;
   justify-content: start;
@@ -14,6 +19,7 @@ export const LogoNav = styled.div`
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
+    color: var(--darkgrey);
   }
 `;
 
@@ -22,7 +28,7 @@ interface NavMenuProps {
 }
 
 export const NavMenu = styled.div<NavMenuProps>`
-  background-color: black;
+  background-color: var(--lightgrey);
   width: 250px;
   height: 100vh;
   display: flex;
@@ -30,7 +36,6 @@ export const NavMenu = styled.div<NavMenuProps>`
   position: fixed;
   top: 0;
   transition: 550ms;
-  left: -100%;
   padding-top: 100px;
 
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
@@ -43,20 +48,20 @@ export const NavMenu = styled.div<NavMenuProps>`
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 18px 0px 8px 16px;
+    padding: 18px 0px 18px 20px;
     list-style: none;
     height: 60px;
-    width: 120px;
-    color: white;
+    width: 160px;
+    color: var(--darkgrey2);
     font-size: 18px;
-    height: 100%;
     border-radius: 5px;
     margin-left: 20px;
+    font-weight: 600;
 
     :hover {
       cursor: pointer;
       background-color: white;
-      color: black;
+      color: var(--darkgrey);
     }
   }
 `;
@@ -65,21 +70,40 @@ export const NavMenuList = styled.ul`
   width: 100%;
 `;
 
-export const NavMenuWeb = styled.div``;
+export const MainContainerWeb = styled.div`
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  color: var(--darkgrey);
+  font-size: 24px;
+  text-transform: uppercase;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
 
-// export const ContainerContent = styled.div`
-//   display: grid;
-//   grid-template-rows: 580px;
-//   grid-template-columns: 89px repeat(7, 127px);
-//   width: 978px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   background: var(--lightgrey);
+export const MainLogo = styled.div`
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+`;
 
-//   @media screen and (max-width: 768px) {
-//     width: 768px;
-//     height: 100%;
-//     grid-template-columns: 100px;
-//     grid-template-rows: repeat(8, 100px);
-//   }
-// `;
+export const NavMenuListWeb = styled.div`
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style-type: none;
+  a {
+    text-decoration: none;
+    display: flex;
+    color: inherit;
+    letter-spacing: 1px;
+    margin: 0 20px;
+  }
+  :last-child {
+    margin-right: 50px;
+  }
+`;
