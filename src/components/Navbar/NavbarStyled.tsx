@@ -100,7 +100,7 @@ export const NavMenuListWeb = styled.div`
   font-weight: 400;
   color: var(--darkgrey);
   list-style-type: none;
-  margin-right: 100px;
+  margin-left: 50px;
 
   li {
     width: 80px;
@@ -147,7 +147,7 @@ export const Square = styled.div`
   height: 50px;
   align-self: center;
   perspective: 500px;
-  margin-left: 50px;
+  margin-right: 50px;
   margin-top: 10px;
 
   @media screen and (max-width: 768px) {
