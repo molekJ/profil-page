@@ -1,7 +1,7 @@
 import { Navbar } from "./components/Navbar/Navbar";
 import { GlobalStyle } from "./GlobalStyles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home } from "./pages/Home";
+import { Home } from "./pages/Home/Home";
 import { AboutMe } from "./pages/AboutMe";
 import { Links } from "./pages/Links";
 import { MyProjects } from "./pages/MyProjects";

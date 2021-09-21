@@ -11,14 +11,19 @@ export const GlobalStyle = createGlobalStyle`
     --orange: #ff801a;
     --lightorange: #ffc79a;
     --lightgreen: #adbb0c;
+    --blue: #95d0eb
     
+}
+
+body {
+    min-width: 100px;
+    font-family: 'Rubik', sans-serif;
 }
 
     * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        font-family: 'Rubik', sans-serif;
     }
 
 `;
