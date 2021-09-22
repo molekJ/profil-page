@@ -19,7 +19,7 @@ export const ProjectWrapper = styled.div`
   align-items: center;
   align-content: stretch;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 
   padding: 50px 0;
 `;
@@ -30,7 +30,7 @@ export const ProjectInfoWrapper = styled.div`
 
 export const HeaderInfo = styled.h3`
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 600;
   letter-spacing: 1.2px;
   margin-bottom: 24px;
@@ -48,7 +48,7 @@ export const IconsSection = styled.div``;
 export const IconsWrapper = styled.div``;
 
 export const ProjectImgWrapper = styled.div`
-  width: 600px;
+  width: 550px;
   height: 400px;
   position: relative;
   display: flex;
@@ -62,8 +62,8 @@ export const ProjectImgWrapper = styled.div`
   }
 
   img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     border-radius: 15px;
   }
 

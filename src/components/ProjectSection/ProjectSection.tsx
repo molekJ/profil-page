@@ -9,6 +9,17 @@ import {
   ProjectWrapper,
 } from "./ProjectSectionStyled";
 import { AiFillGithub, AiOutlineSearch } from "react-icons/ai";
+import {
+  SiJavascript,
+  SiCss3,
+  SiTypescript,
+  SiJira,
+  SiFirebase,
+  SiHtml5,
+  SiReact,
+} from "react-icons/si";
+
+import { DiScrum } from "react-icons/di";
 
 interface Props {
   title: string;
@@ -19,6 +30,7 @@ interface Props {
   leftStart: boolean;
   githubLink: string;
   deployment: string;
+  icons: string[];
 }
 
 export const ProjectSection: React.FC<Props> = ({
@@ -30,6 +42,7 @@ export const ProjectSection: React.FC<Props> = ({
   leftStart,
   githubLink,
   deployment,
+  icons,
 }) => {
   return (
     <ProjectsContainer lightBg={lightBg}>
@@ -41,6 +54,9 @@ export const ProjectSection: React.FC<Props> = ({
           <Paragraph>{description}</Paragraph>
           <IconsSection>
             <p>Technologie</p>
+            {/* {icons.map((icon, index) => {
+              return <[icon]/>
+            })} */}
             <IconsWrapper></IconsWrapper>
           </IconsSection>
         </ProjectInfoWrapper>

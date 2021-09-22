@@ -73,13 +73,14 @@ export const NavMenuList = styled.ul`
 `;
 
 export const MainContainerWeb = styled.div`
+  border-bottom: solid 1px var(--darkgrey);
   position: sticky;
   top: 0;
   z-index: 999;
   background-color: var(--white);
   display: flex;
   height: 120px;
-  justify-content: space-between;
+  justify-content: space-around;
   color: var(--darkgrey);
   font-size: 20px;
   text-transform: uppercase;
