@@ -6,7 +6,7 @@ interface LightBg {
 
 export const ProjectsContainer = styled.div<LightBg>`
   background: var(--darkgrey);
-  padding: 100px 0;
+  padding: 100px 50px;
   color: white;
 
   background: ${({ lightBg }) =>

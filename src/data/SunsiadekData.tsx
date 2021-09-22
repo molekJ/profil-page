@@ -9,5 +9,5 @@ export const SunsiadekData = {
   alt: "susniad application dashboard",
   leftStart: true,
   githubLink: "https://github.com/infoshareacademy/jfddr3-sunsiadek-app",
-  deployment: "https://molekj-diet-app.netlify.app/",
+  deployment: "https://infoshareacademy.github.io/jfddr3-sunsiadek-app",
 };

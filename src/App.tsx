@@ -5,6 +5,7 @@ import { Home } from "./pages/Home/Home";
 import { AboutMe } from "./pages/AboutMe/AboutMe";
 import { Links } from "./pages/Links/Links";
 import { MyProjects } from "./pages/MyProjects/MyProjects";
+import { Scroll } from "./components/Scroll/Scroll";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/my-projects" component={MyProjects} />
           <Route path="/links" component={Links} />
         </Switch>
+        <Scroll />
       </Router>
     </div>
   );

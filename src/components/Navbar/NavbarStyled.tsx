@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const MainContainerMobile = styled.div`
+  position: sticky;
   display: none;
   height: 80px;
   text-transform: uppercase;
@@ -72,6 +73,9 @@ export const NavMenuList = styled.ul`
 `;
 
 export const MainContainerWeb = styled.div`
+  position: sticky;
+  top: 0;
+  z-index: 999;
   background-color: var(--white);
   display: flex;
   height: 120px;
@@ -110,7 +114,6 @@ export const NavMenuListWeb = styled.div`
       color: var(--orange);
       cursor: pointer;
       transition: 0.2s ease-out;
-      font-weight: 600;
       &::after {
         opacity: 1;
       }
