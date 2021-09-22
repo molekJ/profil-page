@@ -10,7 +10,7 @@ export const MainContainerMobile = styled.div`
 `;
 
 export const LogoNav = styled.div`
-  background-color: white;
+  background-color: var(--white);
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -28,7 +28,7 @@ interface NavMenuProps {
 }
 
 export const NavMenu = styled.div<NavMenuProps>`
-  background-color: var(--lightgrey);
+  background-color: var(--grey2);
   width: 250px;
   height: 100vh;
   display: flex;
@@ -63,7 +63,6 @@ export const NavMenu = styled.div<NavMenuProps>`
       cursor: pointer;
       background-color: var(--grey);
       transition: 0.2s ease-out;
-      color: var(--orange);
     }
   }
 `;
@@ -73,9 +72,9 @@ export const NavMenuList = styled.ul`
 `;
 
 export const MainContainerWeb = styled.div`
+  background-color: var(--white);
   display: flex;
   height: 120px;
-  width: 100vw;
   justify-content: space-between;
   color: var(--darkgrey);
   font-size: 20px;
@@ -98,7 +97,7 @@ export const NavMenuListWeb = styled.div`
   justify-content: space-around;
   align-items: center;
   font-weight: 400;
-  color: var(--darkgrey);
+  color: var(--lightgrey);
   list-style-type: none;
   margin-left: 50px;
 
@@ -181,7 +180,7 @@ export const Cube = styled.div`
     position: absolute;
 
     :hover {
-      background: var(--lightorange);
+      background: var(--orange);
     }
   }
 

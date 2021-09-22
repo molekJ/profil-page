@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 90vw;
   margin: 0 auto;
-  margin-top: 100px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  background: var(--white);
   color: var(--darkgrey);
   letter-spacing: 1px;
   text-align: right;

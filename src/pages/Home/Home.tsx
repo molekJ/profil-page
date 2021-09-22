@@ -10,7 +10,7 @@ export const Home = () => {
         <span>my projects</span>
       </p>
       <p>
-        Check <IWrapper>i</IWrapper>t out
+        Let's check <IWrapper>i</IWrapper>t out!
       </p>
     </Container>
   );
