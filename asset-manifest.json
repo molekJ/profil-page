@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.js": "/molekJ/profilPage/static/js/main.e54fb016.chunk.js",
+    "main.js.map": "/molekJ/profilPage/static/js/main.e54fb016.chunk.js.map",
+    "runtime-main.js": "/molekJ/profilPage/static/js/runtime-main.edb7d6ac.js",
+    "runtime-main.js.map": "/molekJ/profilPage/static/js/runtime-main.edb7d6ac.js.map",
+    "static/js/2.89e1639b.chunk.js": "/molekJ/profilPage/static/js/2.89e1639b.chunk.js",
+    "static/js/2.89e1639b.chunk.js.map": "/molekJ/profilPage/static/js/2.89e1639b.chunk.js.map",
+    "index.html": "/molekJ/profilPage/index.html",
+    "static/js/2.89e1639b.chunk.js.LICENSE.txt": "/molekJ/profilPage/static/js/2.89e1639b.chunk.js.LICENSE.txt",
+    "static/media/bakery.d13bc10c.jpg": "/molekJ/profilPage/static/media/bakery.d13bc10c.jpg",
+    "static/media/css.3ec32022.svg": "/molekJ/profilPage/static/media/css.3ec32022.svg",
+    "static/media/diet.bf153292.jpg": "/molekJ/profilPage/static/media/diet.bf153292.jpg",
+    "static/media/firebase.c55df031.svg": "/molekJ/profilPage/static/media/firebase.c55df031.svg",
+    "static/media/html.c1bb84e0.svg": "/molekJ/profilPage/static/media/html.c1bb84e0.svg",
+    "static/media/jira.d3f6317e.svg": "/molekJ/profilPage/static/media/jira.d3f6317e.svg",
+    "static/media/js.081325c6.svg": "/molekJ/profilPage/static/media/js.081325c6.svg",
+    "static/media/react.a060cbe8.svg": "/molekJ/profilPage/static/media/react.a060cbe8.svg",
+    "static/media/sunsiad.31fd9e58.jpg": "/molekJ/profilPage/static/media/sunsiad.31fd9e58.jpg",
+    "static/media/ts.f20748ca.svg": "/molekJ/profilPage/static/media/ts.f20748ca.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.edb7d6ac.js",
+    "static/js/2.89e1639b.chunk.js",
+    "static/js/main.e54fb016.chunk.js"
+  ]
+}
