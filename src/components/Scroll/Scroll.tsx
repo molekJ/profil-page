@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { BiArrowFromBottom } from "react-icons/bi";
 import { ButtonToTop } from "./ScrollStylde";
 import { CgArrowLongUp } from "react-icons/cg";
 

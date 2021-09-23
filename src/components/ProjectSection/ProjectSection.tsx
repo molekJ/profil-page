@@ -1,26 +1,14 @@
 import {
   HeaderInfo,
   IconsSection,
-  IconsWrapper,
   Paragraph,
   ProjectImgWrapper,
   ProjectInfoWrapper,
   ProjectsContainer,
   ProjectWrapper,
 } from "./ProjectSectionStyled";
-import { AiFillGithub, AiOutlineSearch } from "react-icons/ai";
-import {
-  SiJavascript,
-  SiCss3,
-  SiTypescript,
-  SiJira,
-  SiFirebase,
-  SiHtml5,
-  SiReact,
-} from "react-icons/si";
-
-import { DiScrum } from "react-icons/di";
-
+import { AiFillGithub } from "react-icons/ai";
+import { ImEnter } from "react-icons/im";
 interface Props {
   title: string;
   description: string;
@@ -46,18 +34,14 @@ export const ProjectSection: React.FC<Props> = ({
 }) => {
   return (
     <ProjectsContainer lightBg={lightBg}>
-      <ProjectWrapper
-        style={{ flexDirection: leftStart === true ? "row-reverse" : "row" }}
-      >
+      <ProjectWrapper leftStart={leftStart}>
         <ProjectInfoWrapper>
           <HeaderInfo>{title}</HeaderInfo>
           <Paragraph>{description}</Paragraph>
           <IconsSection>
-            <p>Technologie</p>
-            {/* {icons.map((icon, index) => {
-              return <[icon]/>
-            })} */}
-            <IconsWrapper></IconsWrapper>
+            {icons.map((icon, index) => {
+              return <img key={index} src={icon} />;
+            })}
           </IconsSection>
         </ProjectInfoWrapper>
         <ProjectImgWrapper>
@@ -69,7 +53,7 @@ export const ProjectSection: React.FC<Props> = ({
             </a>
             <a href={deployment} target={"_blank"}>
               <p>Try it now!</p>
-              <AiOutlineSearch size={40} />
+              <ImEnter size={40} />
             </a>
           </div>
         </ProjectImgWrapper>

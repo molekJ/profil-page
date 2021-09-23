@@ -1,5 +1,11 @@
 import sunsiad from "../images/sunsiad.jpg";
-import { JsIcon, HtmlIcon } from "./Icons";
+
+import css from "../icons/css.svg";
+import html from "../icons/html.svg";
+import js from "../icons/js.svg";
+import react from "../icons/react.svg";
+import firebase from "../icons/firebase.svg";
+import jira from "../icons/jira.svg";
 
 export const SunsiadekData = {
   title: "sunsiadek",
@@ -11,5 +17,5 @@ export const SunsiadekData = {
   leftStart: true,
   githubLink: "https://github.com/infoshareacademy/jfddr3-sunsiadek-app",
   deployment: "https://infoshareacademy.github.io/jfddr3-sunsiadek-app",
-  icons: ["JsIcon", "HtmlIcon"],
+  icons: [html, css, js, react, firebase, jira],
 };

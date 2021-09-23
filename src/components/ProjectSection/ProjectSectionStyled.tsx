@@ -15,17 +15,31 @@ export const ProjectsContainer = styled.div<LightBg>`
   color: ${({ lightBg }) => (lightBg ? "var(--darkgrey)" : "var(--white)")};
 `;
 
-export const ProjectWrapper = styled.div`
+interface leftStart {
+  leftStart: boolean;
+}
+
+export const ProjectWrapper = styled.div<leftStart>`
   align-items: center;
   align-content: stretch;
   display: flex;
   justify-content: center;
-
   padding: 50px 0;
+  flex-direction: ${({ leftStart }) => (leftStart ? "row-reverse" : "row")};
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
 `;
 
 export const ProjectInfoWrapper = styled.div`
   max-width: 540px;
+  /* min-width: 500px; */
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const HeaderInfo = styled.h3`
@@ -43,9 +57,14 @@ export const Paragraph = styled.div`
   line-height: 24px;
 `;
 
-export const IconsSection = styled.div``;
-
-export const IconsWrapper = styled.div``;
+export const IconsSection = styled.div`
+  img {
+    margin: 0 8px;
+  }
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 20px;
+  }
+`;
 
 export const ProjectImgWrapper = styled.div`
   width: 550px;
@@ -54,6 +73,7 @@ export const ProjectImgWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* min-width: 500px; */
 
   div {
     width: 100%;

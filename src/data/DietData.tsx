@@ -1,14 +1,19 @@
 import diet from "../images/diet.jpg";
-import { JsIcon, HtmlIcon, CssIcon } from "./Icons";
+
+import css from "../icons/css.svg";
+import html from "../icons/html.svg";
+import js from "../icons/js.svg";
+import react from "../icons/react.svg";
 
 export const DietData = {
   title: "diet",
-  description: "twoja dieta twoja dieta twoja dieta twoja dieta twoja dietas",
+  description:
+    'Odtworzenie projektu dostarczonego w pliku .psd. Interakjce: prosty slider, animacje na ":hover", zaznaczanie/odznaczanie ikon. Fajny projekt do utrwalenia CSS, zwłaszcza CSS Grid i Flexbox',
   lightBg: false,
   img: diet,
   alt: "diet application dashboard",
   leftStart: true,
   githubLink: "https://github.com/molekJ/recruitment-task-get-r",
-  deployment: "https://infoshareacademy.github.io/jfddr3-sunsiadek-app/",
-  icons: ["JsIcon", "HtmlIcon", "CssIcon"],
+  deployment: "https://molekj-diet-app.netlify.app/",
+  icons: [html, css, js, react],
 };

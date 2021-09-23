@@ -89,13 +89,6 @@ export const MainContainerWeb = styled.div`
   }
 `;
 
-export const MainLogo = styled.div`
-  height: 100%;
-  display: flex;
-  align-items: center;
-  margin-left: 100px;
-`;
-
 export const NavMenuListWeb = styled.div`
   height: 100%;
   display: flex;

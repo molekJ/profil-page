@@ -6,7 +6,6 @@ import {
   NavMenuList,
   MainContainerWeb,
   NavMenuListWeb,
-  MainLogo,
   Square,
   Cube,
 } from "./NavbarStyled";
