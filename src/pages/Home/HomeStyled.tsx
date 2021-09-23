@@ -49,6 +49,25 @@ export const Container = styled.div`
       font-size: 60px;
     }
   }
+  @media screen and (max-width: 576px) {
+    padding-top: 30px;
+    h2 {
+      margin-right: 10px;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    p:first-of-type {
+      margin-right: 30px;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    p:last-of-type {
+      margin-right: 50px;
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  }
 `;
 
 export const IWrapper = styled.span`

@@ -30,11 +30,14 @@ export const ProjectWrapper = styled.div<leftStart>`
   @media screen and (max-width: 1200px) {
     flex-direction: column;
   }
+
+  @media screen and (max-width: 576px) {
+    padding: 0px;
+  }
 `;
 
 export const ProjectInfoWrapper = styled.div`
   max-width: 540px;
-  /* min-width: 500px; */
   @media screen and (max-width: 1200px) {
     display: flex;
     flex-direction: column;
@@ -73,12 +76,18 @@ export const ProjectImgWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* min-width: 500px; */
 
   div {
     width: 100%;
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 576px) {
+      width: 300px;
+      /* flex-direction: column; */
+      /* align-items: center; */
+      font-size: 12px;
+    }
   }
 
   img {
@@ -98,5 +107,10 @@ export const ProjectImgWrapper = styled.div`
     p {
       margin: 0 5px;
     }
+  }
+
+  @media screen and (max-width: 576px) {
+    width: 400px;
+    height: 300px;
   }
 `;
