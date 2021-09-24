@@ -84,8 +84,6 @@ export const ProjectImgWrapper = styled.div`
 
     @media screen and (max-width: 576px) {
       width: 300px;
-      /* flex-direction: column; */
-      /* align-items: center; */
       font-size: 12px;
     }
   }
