@@ -23,6 +23,7 @@ body {
     min-width: 100px;
     min-height: 100vh;
     font-family: 'Rubik', sans-serif;
+    overflow-x: scroll;
 }
 
     * {

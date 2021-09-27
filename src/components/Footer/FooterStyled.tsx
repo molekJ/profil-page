@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin-top: 20px;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--darkgrey2);
   background: var(--white);
-
+  border-top: solid 1px var(--darkgrey);
+  padding-top: 20px;
   a {
     margin: 0 40px;
     color: inherit;
