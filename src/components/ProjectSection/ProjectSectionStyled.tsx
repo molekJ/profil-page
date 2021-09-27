@@ -8,7 +8,7 @@ export const ProjectsContainer = styled.div<LightBg>`
   background: var(--darkgrey);
   padding: 100px 50px;
   color: white;
-
+  min-height: calc(100vh - 200px);
   background: ${({ lightBg }) =>
     lightBg ? "var(--white)" : "var(--darkgrey)"};
 

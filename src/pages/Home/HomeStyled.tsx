@@ -11,6 +11,8 @@ export const Container = styled.div`
   color: var(--darkgrey);
   letter-spacing: 1px;
   text-align: right;
+  margin-bottom: 100px;
+  min-height: calc(100vh - 300px);
   h2 {
     font-size: 80px;
     margin-right: 100px;
@@ -65,7 +67,7 @@ export const Container = styled.div`
     p:last-of-type {
       margin-right: 50px;
       font-size: 40px;
-      margin-bottom: 20px;
+      /* margin-bottom: 20px; */
     }
   }
 `;

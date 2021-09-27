@@ -79,7 +79,7 @@ export const MainContainerWeb = styled.div`
   z-index: 999;
   background-color: var(--white);
   display: flex;
-  height: 120px;
+  height: 100px;
   justify-content: space-around;
   color: var(--darkgrey);
   font-size: 20px;
