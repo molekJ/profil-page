@@ -1,6 +1,6 @@
 {
   "name": "my-pqge",
-  "homepage": "https://molekJ.github.io/profil-page/",
+  "homepage": "/molekJ.github.io/profil-page/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
