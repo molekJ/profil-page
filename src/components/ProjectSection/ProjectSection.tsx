@@ -16,8 +16,8 @@ interface Props {
   img: string;
   alt: string;
   leftStart: boolean;
-  githubLink: string;
-  deployment: string;
+  githubLink?: string;
+  deployment?: string;
   icons: string[];
 }
 
