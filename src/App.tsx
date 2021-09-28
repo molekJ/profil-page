@@ -13,12 +13,10 @@ import { MyProjects } from "./pages/MyProjects/MyProjects";
 import { Scroll } from "./components/Scroll/Scroll";
 import { Footer } from "./components/Footer/Footer";
 
-const BASE_NAME = "/molekJ.github.io/profil-page/";
-
 function App() {
   return (
     <div>
-      <Router basename={BASE_NAME}>
+      <Router>
         <GlobalStyle />
         <Navbar></Navbar>
         <Switch>
