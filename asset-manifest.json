@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/molekJ.github.io/profil-page/static/js/main.f7f33c71.chunk.js",
-    "main.js.map": "/molekJ.github.io/profil-page/static/js/main.f7f33c71.chunk.js.map",
+    "main.js": "/molekJ.github.io/profil-page/static/js/main.26e401ff.chunk.js",
+    "main.js.map": "/molekJ.github.io/profil-page/static/js/main.26e401ff.chunk.js.map",
     "runtime-main.js": "/molekJ.github.io/profil-page/static/js/runtime-main.6d1b5344.js",
     "runtime-main.js.map": "/molekJ.github.io/profil-page/static/js/runtime-main.6d1b5344.js.map",
-    "static/js/2.e9026331.chunk.js": "/molekJ.github.io/profil-page/static/js/2.e9026331.chunk.js",
-    "static/js/2.e9026331.chunk.js.map": "/molekJ.github.io/profil-page/static/js/2.e9026331.chunk.js.map",
+    "static/js/2.35a3f275.chunk.js": "/molekJ.github.io/profil-page/static/js/2.35a3f275.chunk.js",
+    "static/js/2.35a3f275.chunk.js.map": "/molekJ.github.io/profil-page/static/js/2.35a3f275.chunk.js.map",
     "index.html": "/molekJ.github.io/profil-page/index.html",
-    "static/js/2.e9026331.chunk.js.LICENSE.txt": "/molekJ.github.io/profil-page/static/js/2.e9026331.chunk.js.LICENSE.txt",
+    "static/js/2.35a3f275.chunk.js.LICENSE.txt": "/molekJ.github.io/profil-page/static/js/2.35a3f275.chunk.js.LICENSE.txt",
     "static/media/bakery.d13bc10c.jpg": "/molekJ.github.io/profil-page/static/media/bakery.d13bc10c.jpg",
     "static/media/css.3ec32022.svg": "/molekJ.github.io/profil-page/static/media/css.3ec32022.svg",
     "static/media/diet.bf153292.jpg": "/molekJ.github.io/profil-page/static/media/diet.bf153292.jpg",
@@ -21,7 +21,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6d1b5344.js",
-    "static/js/2.e9026331.chunk.js",
-    "static/js/main.f7f33c71.chunk.js"
+    "static/js/2.35a3f275.chunk.js",
+    "static/js/main.26e401ff.chunk.js"
   ]
 }
