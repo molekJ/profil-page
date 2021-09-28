@@ -20,9 +20,9 @@ function App() {
         <GlobalStyle />
         <Navbar></Navbar>
         <Switch>
-          <Route exact path="/profil-page">
+          {/* <Route exact path="/profil-page">
             <Redirect to="/" />
-          </Route>
+          </Route> */}
           <Route path="/" exact component={Home} />
           <Route path="/about-me" component={AboutMe} />
           <Route path="/my-projects" component={MyProjects} />
