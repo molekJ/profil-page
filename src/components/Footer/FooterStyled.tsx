@@ -12,9 +12,23 @@ export const Container = styled.div`
   a {
     margin: 0 40px;
     color: inherit;
+    transition: 0.2s ease-out;
   }
-  div :hover {
-    color: var(--darkblue);
+
+  div:nth-of-type(1) {
+    a:hover {
+      color: var(--darkblue);
+    }
+  }
+  div:nth-of-type(2) {
+    a:hover {
+      color: var(--orange);
+    }
+  }
+  div:nth-of-type(3) {
+    a:hover {
+      color: var(--lightgreen);
+    }
   }
 
   @media screen and (max-width: 576px) {
