@@ -95,7 +95,7 @@ export const NavMenuListWeb = styled.div`
   justify-content: space-around;
   align-items: center;
   font-weight: 400;
-  color: var(--lightgrey);
+  color: var(--darkgrey);
   list-style-type: none;
   margin-left: 50px;
 
