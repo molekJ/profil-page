@@ -30,6 +30,11 @@ export const Container = styled.div`
       color: var(--lightgreen);
     }
   }
+  div:nth-of-type(4) {
+    a:hover {
+      color: var(--black);
+    }
+  }
 
   @media screen and (max-width: 576px) {
     a {

@@ -1,11 +1,12 @@
 import { Container } from "./FooterStyled";
-import { AiFillLinkedin, AiOutlineMail, AiFillPhone } from "react-icons/ai";
+import {
+  AiFillLinkedin,
+  AiOutlineMail,
+  AiFillPhone,
+  AiFillGithub,
+} from "react-icons/ai";
 
 export const Footer = () => {
-  //   const sendEmail = () => {
-  //     window.open("mailto:molickikuba@gmail.com");
-  //   };
-
   return (
     <Container>
       <div>
@@ -25,6 +26,11 @@ export const Footer = () => {
       <div>
         <a href="tel:+48504073031">
           <AiFillPhone size={40} />
+        </a>
+      </div>
+      <div>
+        <a href="https://github.com/molekJ" target={"_blank"} rel="noreferrer">
+          <AiFillGithub size={40} />
         </a>
       </div>
     </Container>
