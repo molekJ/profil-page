@@ -56,8 +56,8 @@ export const ProjectsData = [
     img: inprogress,
     alt: "in progress",
     leftStart: false,
-    // githubLink: "https://github.com/molekJ/Weather",
-    // deployment: "https://molekj-diet-app.netlify.app/",
+    githubLink: "https://github.com/molekJ/Weather",
+    deployment: "https://molekj.github.io/weather/",
     icons: [],
   },
 ];
