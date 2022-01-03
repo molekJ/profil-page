@@ -1,11 +1,6 @@
 import { Navbar } from "./components/Navbar/Navbar";
 import { GlobalStyle } from "./GlobalStyles";
-import {
-  HashRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
 import { AboutMe } from "./pages/AboutMe/AboutMe";
 import { Links } from "./pages/Links/Links";

@@ -2,6 +2,7 @@ import bakery from "../images/bakery.jpg";
 import sunsiad from "../images/sunsiad.jpg";
 import diet from "../images/diet.jpg";
 import inprogress from "../images/inprogress.jpg";
+import weather from "../images/weather.jpg";
 
 import css from "../icons/css.svg";
 import html from "../icons/html.svg";
@@ -27,7 +28,7 @@ export const ProjectsData = [
   {
     title: "bakery",
     description:
-      "Jest to prosta gierka, w której robimy i sprzedajemy ciastka. Było to jedno z zadań domowych bootcampu, do wykonania w Vanilla JS. Z uwagi na mnogość zagwozdek postanowiłem wrócić do tego i napisać ją jeszcze raz w React oraz TypeScript (jest to mój pierwszy projekt z wykorzystaniem TS). Tak, wiem- wygląd nie powala, ale nie o wygląd tu chodzi. Spróbuj! Tylko nie graj do późna...",
+      "Jest to prosta gierka, w której robimy i sprzedajemy ciastka. Było to jedno z zadań domowych bootcampu, do wykonania w Vanilla JS. Z uwagi na mnogość zagwozdek postanowiłem wrócić do tego i napisać jeszcze raz - tym razem w React oraz TypeScript (jest to mój pierwszy projekt z wykorzystaniem TS). Wygląd nie powala, ale nie o wygląd tu chodzi.",
     lightBg: true,
     img: bakery,
     alt: "bakery game",
@@ -39,7 +40,7 @@ export const ProjectsData = [
   {
     title: "diet",
     description:
-      'Odtworzenie projektu dostarczonego w pliku .psd. Interakjce: prosty slider, animacje na ":hover", zaznaczanie/odznaczanie ikon. Fajny projekt do utrwalenia CSS, zwłaszcza CSS Grid i Flexbox',
+      'Odtworzenie projektu dostarczonego w pliku .psd. Interakjce: prosty slider, animacje na ":hover", zaznaczanie/odznaczanie ikon. Dobry projekt do utrwalenia CSS, zwłaszcza CSS Grid i Flexbox',
     lightBg: false,
     img: diet,
     alt: "diet application dashboard",
@@ -50,14 +51,13 @@ export const ProjectsData = [
   },
   {
     title: "weather",
-    description:
-      "Aplikacja pogodowa, wykorzystująca API. W trakcie tworzenia...",
+    description: "Aplikacja pogodowa, wykorzystująca API openweathermap.org.",
     lightBg: true,
-    img: inprogress,
-    alt: "in progress",
+    img: weather,
+    alt: "weather application dashboard",
     leftStart: false,
     githubLink: "https://github.com/molekJ/Weather",
     deployment: "https://molekj.github.io/weather/",
-    icons: [],
+    icons: [html, css, js, react, ts],
   },
 ];
