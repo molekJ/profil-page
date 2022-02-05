@@ -40,7 +40,9 @@ export const ProjectSection: React.FC<Props> = ({
           <Paragraph>{description}</Paragraph>
           <IconsSection>
             {icons.map((icon, index) => {
-              return <img key={index} src={icon} alt="icon" />;
+              return (
+                <img key={index} src={icon} alt="icon" width={48} height={48} />
+              );
             })}
           </IconsSection>
         </ProjectInfoWrapper>

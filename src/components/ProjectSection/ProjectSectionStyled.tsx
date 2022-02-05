@@ -37,7 +37,8 @@ export const ProjectWrapper = styled.div<leftStart>`
 `;
 
 export const ProjectInfoWrapper = styled.div`
-  max-width: 540px;
+  width: 650px;
+
   @media screen and (max-width: 1200px) {
     display: flex;
     flex-direction: column;
@@ -70,7 +71,7 @@ export const IconsSection = styled.div`
 `;
 
 export const ProjectImgWrapper = styled.div`
-  width: 550px;
+  width: 650px;
   height: 400px;
   position: relative;
   display: flex;

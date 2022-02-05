@@ -4,6 +4,7 @@ import diet from "../images/diet.jpg";
 import inprogress from "../images/inprogress.jpg";
 import weather from "../images/weather.jpg";
 import todolist from "../images/todolist.jpg";
+import quiz from "../images/quiz.jpg";
 
 import css from "../icons/css.svg";
 import html from "../icons/html.svg";
@@ -12,8 +13,23 @@ import react from "../icons/react.svg";
 import ts from "../icons/ts.svg";
 import firebase from "../icons/firebase.svg";
 import jira from "../icons/jira.svg";
+import i18next from "../icons/i18next.svg";
+import reactRouterDom from "../icons/react-router-dom.svg";
+import bootstrap from "../icons/bootstrap.svg";
 
 export const ProjectsData = [
+  {
+    title: "Quiz",
+    description:
+      "Aplikacja do przeprowadzania testu jednokrotnego wyboru. Dane pobierane są z pliku .JSON. Po udzieleniu odpowiedzi na wszystkie pytania wyświetlany jest ekran podsumowania, a następnie ekran podglądu udzielonych odpowiedzi oraz odpowiedzi poprawnych. ",
+    lightBg: false,
+    img: quiz,
+    alt: "quiz application dashboard",
+    leftStart: false,
+    githubLink: "https://github.com/molekJ/quiz",
+    deployment: "https://molekj.github.io/quiz/",
+    icons: [html, css, js, react, ts, i18next, reactRouterDom, bootstrap],
+  },
   {
     title: "ToDoList",
     description:
@@ -35,7 +51,7 @@ export const ProjectsData = [
     leftStart: false,
     githubLink: "https://github.com/molekJ/Weather",
     deployment: "https://molekj.github.io/weather/",
-    icons: [html, css, js, react, ts],
+    icons: [html, css, js, react, ts, reactRouterDom],
   },
   {
     title: "diet",
@@ -71,6 +87,6 @@ export const ProjectsData = [
     leftStart: true,
     githubLink: "https://github.com/infoshareacademy/jfddr3-sunsiadek-app",
     deployment: "https://infoshareacademy.github.io/jfddr3-sunsiadek-app",
-    icons: [html, css, js, react, firebase, jira],
+    icons: [html, css, js, react, firebase, jira, reactRouterDom],
   },
 ];
