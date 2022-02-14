@@ -5,23 +5,23 @@ export const AboutMe = () => {
   return (
     <Container>
       <p>
-        Nazywam się Jakub Molicki, mam 30 lat i mieszkam w Białej Podlaskiej
-        (woj. Lubelskie).
+        My name is Jakub, I am 31 years old and I live in Biała Podlaska
+        (voivodeship Lubelskie).
       </p>
       <p>
         {" "}
-        Moje dotychczasowe doświadczenie zawodowe jest dosyć różnorodne,
-        pracowałem w wielu miejscach, wykonywałem rozmaite czynności. W każdej
-        pracy dochodziłem do momentu, w którym potrzebowałem nowych wyzwań. Nowe
-        wyzwania nie pojawiały się, więc zmieniałem zawód. Przyszedł czas by
-        ukierunkować się w dziedzinie w której będę mogł się rozwijać, dostawać
-        nowe cele i obowiązki. Na studiach miałem podstawy programowania- stąd
-        wiedziałem, że w programowaniu wyzwań brakować nie będzie.
+        My previous professional experience is quite diverse. I have worked in
+        many places and I have done different types of work. In each job I came
+        to the point where I needed new challenges. The challenges were not
+        showing up, so I was changing my profession. The time has come to
+        redirect professional field, where I will be able to develop and I will
+        receive new duties. I had basics of programming in college - that's why
+        I knew the programming will fulfill my expectations.
       </p>
       <p>
-        I tak oto zapisałem sie na Bootcamp Front-end w InfoShare Academy, gdzie
-        nauczyłem się solidnych podstaw by móc tworzyć własne projekty. W chwili
-        obecnej uczę się samodzielnie, korzystam z zasobów stron:{" "}
+        I have signed up to bootcamp Front-end in infoShare Academy, in which I
+        learned strong basics to create my own projects. Currently I learn in my
+        own, I use websites resources like:{" "}
         <a
           href="https://developer.mozilla.org/"
           target="_blank"
@@ -37,7 +37,7 @@ export const AboutMe = () => {
         <a href=" https://stackoverflow.com/" target="_blank" rel="noreferrer">
           Stack Overflow
         </a>{" "}
-        oraz tutoriali:
+        and tutorials:{" "}
         <a
           href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg"
           target="_blank"
@@ -56,7 +56,7 @@ export const AboutMe = () => {
         .
       </p>
       <p>
-        Sprawdź zakładkę <Link to="/my-projects">Moje projekty</Link>.
+        Check the bookmark: <Link to="/my-projects">MY PROJECTS</Link>.
       </p>
     </Container>
   );

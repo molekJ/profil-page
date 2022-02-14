@@ -1,7 +1,6 @@
 import bakery from "../images/bakery.jpg";
 import sunsiad from "../images/sunsiad.jpg";
 import diet from "../images/diet.jpg";
-import inprogress from "../images/inprogress.jpg";
 import weather from "../images/weather.jpg";
 import todolist from "../images/todolist.jpg";
 import quiz from "../images/quiz.jpg";
@@ -21,7 +20,7 @@ export const ProjectsData = [
   {
     title: "Quiz",
     description:
-      "Aplikacja do przeprowadzania testu jednokrotnego wyboru. Dane pobierane są z pliku .JSON. Po udzieleniu odpowiedzi na wszystkie pytania wyświetlany jest ekran podsumowania, a następnie ekran podglądu udzielonych odpowiedzi oraz odpowiedzi poprawnych. ",
+      "Single-choice test application with retrieving data from JSON file. After answering all the questions, a summary screen is displayed and then we can check our results.",
     lightBg: false,
     img: quiz,
     alt: "quiz application dashboard",
@@ -33,7 +32,7 @@ export const ProjectsData = [
   {
     title: "ToDoList",
     description:
-      "Klasyk klasyków. Prosta aplikacja w której możemy dodawać planowane zadania. Wykorzystałem Local Storage, dzięki czemu nasze zadania automatycznie zapisują się w pamięci przeglądarki i wczytują po ponownym jej uruchomnieniu.",
+      "Classic of the classics. The simple application in which we can add our scheduled tasks. I used LocalStorage - tasks are saving automatically and loading after refresh.",
     lightBg: true,
     img: todolist,
     alt: "todolist application dashboard",
@@ -43,8 +42,9 @@ export const ProjectsData = [
     icons: [html, css, js, react, ts],
   },
   {
-    title: "weather",
-    description: "Aplikacja pogodowa, wykorzystująca API openweathermap.org.",
+    title: "Weather",
+    description:
+      "The weather application that uses API openweathermap.org. There are two bookmarks: first - a list of cities, second - searching.",
     lightBg: false,
     img: weather,
     alt: "weather application dashboard",
@@ -56,7 +56,7 @@ export const ProjectsData = [
   {
     title: "diet",
     description:
-      'Odtworzenie projektu dostarczonego w pliku .psd. Interakjce: prosty slider, animacje na ":hover", zaznaczanie/odznaczanie ikon. Dobry projekt do utrwalenia CSS, zwłaszcza CSS Grid i Flexbox',
+      "Reproduction the project from a .psd file. Simple interactions: slider, hover animations, selecting / deselecting icons. Helpful project to consolidate CSS knowledge. ",
     lightBg: true,
     img: diet,
     alt: "diet application dashboard",
@@ -68,7 +68,7 @@ export const ProjectsData = [
   {
     title: "bakery",
     description:
-      "Jest to prosta gierka, w której robimy i sprzedajemy ciastka. Było to jedno z zadań domowych bootcampu, do wykonania w Vanilla JS. Z uwagi na mnogość zagwozdek postanowiłem wrócić do tego i napisać jeszcze raz - tym razem w React oraz TypeScript (jest to mój pierwszy projekt z wykorzystaniem TS). Wygląd nie powala, ale nie o wygląd tu chodzi.",
+      "The simple game,  in which we make and sell cookies. I had this task during my bootcamp at Vanilla JS. Due to there are many brain teasers I have decided to come back to this and make it but this time in React.is and TypeScript.",
     lightBg: false,
     img: bakery,
     alt: "bakery game",
@@ -80,7 +80,7 @@ export const ProjectsData = [
   {
     title: "sunsiadek",
     description:
-      'Jest to projekt grupowy, kończący bootcamp. Aplikacja przeznaczona dla społeczności lokalnych, takich jak wieś, mała miejscowość czy też osiedle w większym mieście. Użytkownik może dodawać ogłosznia w zależności od kategorii jaką to ogłosznie reprezentuje. Główny cel aplikacji to polepszenie relacji sąsiedzkich, lepsze poznanie się, niesienie pomocy oraz dbanie o wspólne dobro małych społeczności. Przykład: w kategorii "pomoc" możemy zaoferować zrobienie zakupów bądź wyprowadzenie psa.',
+      'This is a group project that ends the bootcamp. The application is intended for local communities, such as a village, a small town or a housing estate in a larger city. The user can add announcements depending on the category it represents. The main goal of the application is to improve neighborly relations, get to know each other better, help and care for the common good of small communities. Example: in the "help" category, we can offer to buy something for older people or walk a dog.',
     lightBg: true,
     img: sunsiad,
     alt: "susniad application dashboard",
