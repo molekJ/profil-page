@@ -16,14 +16,21 @@ export const GlobalStyle = createGlobalStyle`
     --lightgreen: #adbb0c;
     --blue: #95d0eb;
     --darkblue: #3766c2;
-    
+    --dark: #2e2e36;
+    --aqua: #01BC9A;
+    --red: #D93025;
+    --green: #188038;
 }
 
 body {
     min-width: 100px;
     min-height: 100vh;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+ 
     overflow-x: scroll;
+    background: var(--dark);
 }
 
     * {

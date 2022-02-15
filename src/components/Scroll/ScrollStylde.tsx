@@ -11,7 +11,8 @@ export const ButtonToTop = styled.button<ButtonProps>`
   display: ${({ isVisible }) => (isVisible ? "block" : "none")};
   background: none;
   border: none;
-  color: var(--darkgrey3);
+  color: var(--lightorange);
+  transition: 0.2s ease-out;
 
   p {
     transform: rotate(90deg);
@@ -21,6 +22,8 @@ export const ButtonToTop = styled.button<ButtonProps>`
   }
 
   :hover {
+    transition: 0.2s ease-out;
     cursor: pointer;
+    color: var(--orange);
   }
 `;

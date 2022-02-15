@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   min-height: calc(100vh - 200px);
-  width: 60%;
+  width: 70vw;
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color: var(--darkgrey2);
+  padding-top: 60px;
+
+  color: var(--grey2);
 
   @media screen and (max-width: 768px) {
     width: 80%;
@@ -18,25 +18,35 @@ export const Container = styled.div`
     font-size: 18px;
   }
 
-  font-size: 24px;
-  letter-spacing: 1px;
-  line-height: 30px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 45px;
+
   p {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+
+  p:first-of-type {
+    /* color: yellow; */
+  }
+  p:nth-of-type(2) {
+    /* color: red; */
+  }
+  p:nth-of-type(3) {
+    /* color: green; */
+  }
+  p:nth-of-type(4) {
+    /* color: blue; */
   }
 
   a {
     text-decoration: none;
-    color: var(--lightgreen);
+    color: var(--lightorange);
+    transition: 0.2s ease-out;
+    position: relative;
     :hover {
-      border-bottom: 1px solid var(--lightgreen);
-    }
-  }
-
-  p:last-of-type a {
-    color: var(--orange);
-    :hover {
-      border-bottom: 1px solid var(--orange);
+      transition: 0.2s ease-out;
+      color: var(--orange);
     }
   }
 `;

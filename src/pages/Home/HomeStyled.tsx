@@ -1,51 +1,48 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 90vw;
+  width: 70vw;
   margin: 0 auto;
-  padding-top: 100px;
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  background: var(--white);
-  color: var(--darkgrey);
-  letter-spacing: 1px;
-  text-align: right;
-  margin-bottom: 100px;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--grey2);
   min-height: calc(100vh - 300px);
-  h2 {
-    font-size: 80px;
-    margin-right: 100px;
-    margin-bottom: 80px;
+  position: relative;
+`;
+
+export const ImgWrapper = styled.div`
+  position: relative;
+  width: 50%;
+
+  p {
+    position: relative;
+    text-align: center;
+    bottom: 150px;
+    font-size: 100px;
+    letter-spacing: 4px;
+    /* font-family: "Indie Flower", cursive; */
+    /* margin-bottom: -80px; */
+  }
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+`;
+
+export const InfoWrapper = styled.div`
+  width: 50%;
+  font-size: 60px;
+  letter-spacing: 4px;
+  text-align: end;
+  margin-top: 100px;
+
+  span {
     color: var(--lightorange);
   }
 
-  p:first-of-type {
-    font-size: 60px;
-    margin-right: 200px;
-    margin-bottom: 80px;
-    margin-left: 50px;
-  }
-
-  p:last-of-type {
-    font-size: 60px;
-    margin-right: 300px;
-    margin-left: 100px;
-  }
-  span {
-    color: var(--lightgreen);
-  }
-
   @media screen and (max-width: 768px) {
-    h2 {
-      margin-right: 50px;
-      font-size: 60px;
-    }
-    p:first-of-type {
-      margin-right: 100px;
-      font-size: 60px;
-    }
-
     p:last-of-type {
       margin-right: 150px;
       font-size: 60px;
@@ -53,21 +50,10 @@ export const Container = styled.div`
   }
   @media screen and (max-width: 576px) {
     padding-top: 30px;
-    h2 {
-      margin-right: 10px;
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-    p:first-of-type {
-      margin-right: 30px;
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
 
     p:last-of-type {
       margin-right: 50px;
       font-size: 40px;
-      /* margin-bottom: 20px; */
     }
   }
 `;
@@ -76,7 +62,7 @@ export const IWrapper = styled.span`
   background-image: -webkit-linear-gradient(
     top,
     var(--lightorange) 33%,
-    var(--darkgrey) 10%
+    var(--grey2) 10%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

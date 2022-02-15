@@ -6,6 +6,7 @@ import {
   ProjectInfoWrapper,
   ProjectsContainer,
   ProjectWrapper,
+  Container,
 } from "./ProjectSectionStyled";
 import { AiFillGithub } from "react-icons/ai";
 import { ImEnter } from "react-icons/im";
@@ -33,33 +34,42 @@ export const ProjectSection: React.FC<Props> = ({
   icons,
 }) => {
   return (
-    <ProjectsContainer lightBg={lightBg}>
-      <ProjectWrapper leftStart={leftStart}>
-        <ProjectInfoWrapper>
-          <HeaderInfo>{title}</HeaderInfo>
-          <Paragraph>{description}</Paragraph>
-          <IconsSection>
-            {icons.map((icon, index) => {
-              return (
-                <img key={index} src={icon} alt="icon" width={48} height={48} />
-              );
-            })}
-          </IconsSection>
-        </ProjectInfoWrapper>
-        <ProjectImgWrapper>
-          <img alt={alt} src={img}></img>
-          <div>
-            <a href={githubLink} target={"_blank"} rel="noreferrer">
-              <p>Look at the code!</p>
-              <AiFillGithub size={40} />
-            </a>
-            <a href={deployment} target={"_blank"} rel="noreferrer">
-              <p>Try it now!</p>
-              <ImEnter size={40} />
-            </a>
-          </div>
-        </ProjectImgWrapper>
-      </ProjectWrapper>
-    </ProjectsContainer>
+    <Container>
+      <ProjectsContainer lightBg={lightBg}>
+        <ProjectWrapper leftStart={leftStart}>
+          <ProjectInfoWrapper>
+            <HeaderInfo>{title}</HeaderInfo>
+            <Paragraph>{description}</Paragraph>
+            <IconsSection>
+              {icons.map((icon, index) => {
+                return (
+                  <img
+                    key={index}
+                    src={icon}
+                    alt="icon"
+                    width={48}
+                    height={48}
+                  />
+                );
+              })}
+            </IconsSection>
+          </ProjectInfoWrapper>
+          <ProjectImgWrapper>
+            <img alt={alt} src={img} color="red"></img>
+
+            <div>
+              <a href={githubLink} target={"_blank"} rel="noreferrer">
+                <p>Look at the code!</p>
+                <AiFillGithub size={40} />
+              </a>
+              <a href={deployment} target={"_blank"} rel="noreferrer">
+                <p>Try it now!</p>
+                <ImEnter size={40} />
+              </a>
+            </div>
+          </ProjectImgWrapper>
+        </ProjectWrapper>
+      </ProjectsContainer>
+    </Container>
   );
 };

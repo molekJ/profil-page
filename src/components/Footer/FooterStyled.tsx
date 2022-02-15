@@ -2,15 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 80px;
+  width: 70vw;
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: var(--darkgrey2);
-  background: var(--white);
-  border-top: solid 1px var(--darkgrey);
+  margin: 0 auto;
+  color: var(--grey2);
   padding-top: 20px;
   a {
-    margin: 0 40px;
+    margin: 0 30px;
     color: inherit;
     transition: 0.2s ease-out;
   }
@@ -22,12 +21,12 @@ export const Container = styled.div`
   }
   div:nth-of-type(2) {
     a:hover {
-      color: var(--orange);
+      color: var(--red);
     }
   }
   div:nth-of-type(3) {
     a:hover {
-      color: var(--lightgreen);
+      color: var(--green);
     }
   }
   div:nth-of-type(4) {
