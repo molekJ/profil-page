@@ -84,7 +84,7 @@ export const ProjectImgWrapper = styled.div`
   img {
     width: 100%;
     border-radius: 5px;
-    opacity: 70%;
+    /* opacity: 70%; */
     height: 50vh;
   }
 

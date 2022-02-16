@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding-top: 60px;
+  padding-top: 30px;
 
   color: var(--grey2);
 
@@ -24,6 +24,7 @@ export const Container = styled.div`
 
   p {
     margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   p:first-of-type {
@@ -41,12 +42,23 @@ export const Container = styled.div`
 
   a {
     text-decoration: none;
-    color: var(--lightorange);
+    color: var(--blue);
     transition: 0.2s ease-out;
     position: relative;
     :hover {
       transition: 0.2s ease-out;
-      color: var(--orange);
+      color: var(--darkblue);
     }
   }
+
+  img {
+    float: right;
+    width: 300px;
+    height: 450px;
+    margin: 50px 100px 20px 100px;
+  }
 `;
+
+interface Crossbar {
+  leftStart: boolean;
+}

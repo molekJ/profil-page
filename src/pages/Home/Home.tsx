@@ -1,15 +1,28 @@
-import { Container, ImgWrapper, InfoWrapper } from "./HomeStyled";
+import {
+  Container,
+  ImgWrapper,
+  BeforeImgWrapper,
+  InfoWrapper,
+} from "./HomeStyled";
 import molek from "../../images/molek.svg";
 import logoMol from "../../images/logoMOL.jpg";
 
 export const Home = () => {
   return (
-    <Container>
-      <InfoWrapper></InfoWrapper>
-      <ImgWrapper>
-        <img alt="profile picture" src={logoMol}></img>
-        {/* <p>Jakub Molicki</p> */}
-      </ImgWrapper>
-    </Container>
+    <>
+      <Container>
+        <BeforeImgWrapper></BeforeImgWrapper>
+        <ImgWrapper>
+          <img alt="profile picture" src={logoMol}></img>
+          {/* <p>Jakub Molicki</p> */}
+        </ImgWrapper>
+      </Container>
+      <InfoWrapper>
+        <p>Junior</p>
+        <p>Front-</p>
+        <p>-end</p>
+        <p>Developer</p>
+      </InfoWrapper>
+    </>
   );
 };

@@ -95,7 +95,7 @@ export const NavMenuListWeb = styled.div`
     position: relative;
     transition: all 0.3s ease-out;
     &:hover {
-      color: var(--orange);
+      color: var(--darkblue);
       cursor: pointer;
       &::after {
         opacity: 1;
@@ -104,7 +104,7 @@ export const NavMenuListWeb = styled.div`
     &:after {
       width: 30px;
       height: 2px;
-      background: var(--orange);
+      background: var(--darkblue);
       transition: 0.3s ease-out;
       content: "";
       opacity: 0;
