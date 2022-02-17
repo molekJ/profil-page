@@ -14,22 +14,31 @@ export const Footer = () => {
           href="https://linkedin.com/in/jakub-molicki"
           target={"_blank"}
           rel="noreferrer"
+          title="Go to my Linkedin profile"
         >
           <AiFillLinkedin size={40} />
         </a>
       </div>
       <div>
-        <a href="mailto:molickikuba@gmail.com?subject=Hello! I came from Your profile Page">
+        <a
+          href="mailto:molickikuba@gmail.com?subject=Hello! I came from Your profile Page"
+          title="Send me an e-mail"
+        >
           <AiOutlineMail size={40} />
         </a>
       </div>
       <div>
-        <a href="tel:+48504073031">
+        <a title="Call me" href="tel:+48504073031">
           <AiFillPhone size={40} />
         </a>
       </div>
       <div>
-        <a href="https://github.com/molekJ" target={"_blank"} rel="noreferrer">
+        <a
+          href="https://github.com/molekJ"
+          target={"_blank"}
+          rel="noreferrer"
+          title="Go to my Github profile"
+        >
           <AiFillGithub size={40} />
         </a>
       </div>

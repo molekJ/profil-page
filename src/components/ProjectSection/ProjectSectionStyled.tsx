@@ -1,106 +1,98 @@
 import styled from "styled-components";
-interface LightBg {
-  lightBg: boolean;
-}
-interface leftStart {
-  leftStart: boolean;
-}
 
 export const Container = styled.div`
-  width: 70vw;
-  height: calc(100vh - 80px);
-  margin: 0 auto;
+  position: relative;
+  width: 45%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px 0px 0px 20px;
+  margin: 20px 20px 80px 20px;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 
-export const ProjectsContainer = styled.div<LightBg>`
-  width: 100%;
-  background: ${({ lightBg }) => (lightBg ? "var(--dark)" : "var(--dark)")};
-  color: ${({ lightBg }) => (lightBg ? "var(--grey2)" : "var(--grey2)")};
-`;
-
-export const ProjectWrapper = styled.div<leftStart>`
-  width: 100%;
+export const TopContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  flex-direction: ${({ leftStart }) => (leftStart ? "row-reverse" : "row")};
-  justify-content: space-around;
-  text-align: ${({ leftStart }) => (leftStart ? "right" : "left")};
-  @media screen and (max-width: 1200px) {
-  }
-
-  @media screen and (max-width: 576px) {
-  }
 `;
-
-export const ProjectInfoWrapper = styled.div`
-  width: 40%;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  @media screen and (max-width: 1200px) {
-  }
+export const InfoContainer = styled.div`
+  width: 50%;
 `;
 
 export const HeaderInfo = styled.h3`
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 36px;
-  letter-spacing: 5px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 `;
 
-export const Paragraph = styled.div`
-  font-size: 18px;
-  line-height: 24px;
+interface Parag {
+  isEllipsed: boolean;
+}
+
+export const Paragraph = styled.div<Parag>`
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 30px;
+  padding: 0 10px;
+  -webkit-line-clamp: ${({ isEllipsed }) => (isEllipsed ? "inferit" : "3")};
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  cursor: pointer;
 `;
 
 export const IconsSection = styled.div`
+  align-items: center;
+  display: flex;
+  margin: 20px 0 30px 00;
+  p {
+    margin-right: 20px;
+  }
   img {
   }
   @media screen and (max-width: 1200px) {
   }
 `;
 
-export const ProjectImgWrapper = styled.div`
-  position: relative;
+export const ImgWrapper = styled.div`
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
-  max-height: 50vh;
-
-  div {
-    display: flex;
-    justify-content: center;
-
-    @media screen and (max-width: 576px) {
-    }
-  }
 
   img {
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
-    /* opacity: 70%; */
-    height: 50vh;
-  }
-
-  a {
-    height: 100px;
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    align-items: center;
-    margin: 10px 30px;
-
-    p {
-      margin: 0 5px;
-    }
+    margin-bottom: 20px;
   }
 
   @media screen and (max-width: 576px) {
+  }
+`;
+
+export const LinksWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: -70px;
+
+  @media screen and (max-width: 576px) {
+  }
+
+  a {
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    color: var(--darkgrey);
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px 0;
+    :hover {
+      transition: all 0.3s ease-out;
+      color: var(--black);
+    }
   }
 `;

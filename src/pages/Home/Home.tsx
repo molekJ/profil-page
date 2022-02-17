@@ -1,20 +1,14 @@
-import {
-  Container,
-  ImgWrapper,
-  BeforeImgWrapper,
-  InfoWrapper,
-} from "./HomeStyled";
-import molek from "../../images/molek.svg";
-import logoMol from "../../images/logoMOL.jpg";
+import { Container, ImgWrapper, InfoWrapper, NameWrapper } from "./HomeStyled";
+import logomolek from "../../images/logomolek.svg";
 
 export const Home = () => {
   return (
     <>
       <Container>
-        <BeforeImgWrapper></BeforeImgWrapper>
         <ImgWrapper>
-          <img alt="profile picture" src={logoMol}></img>
-          {/* <p>Jakub Molicki</p> */}
+          <p>&lt;/</p>
+          <img alt="profile picture" src={logomolek}></img>
+          <p>&gt;</p>
         </ImgWrapper>
       </Container>
       <InfoWrapper>
@@ -23,6 +17,10 @@ export const Home = () => {
         <p>-end</p>
         <p>Developer</p>
       </InfoWrapper>
+      <NameWrapper>
+        <p>Molicki</p>
+        <p>Jakub</p>
+      </NameWrapper>
     </>
   );
 };

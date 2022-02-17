@@ -6,12 +6,13 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  color: var(--grey2);
   padding-top: 20px;
+  color: var(--darkgrey);
+
   a {
     margin: 0 30px;
     color: inherit;
-    transition: 0.2s ease-out;
+    transition: all 0.3s ease-out;
   }
 
   div:nth-of-type(1) {
@@ -37,7 +38,6 @@ export const Container = styled.div`
 
   @media screen and (max-width: 576px) {
     a {
-      margin: 0 20px;
     }
   }
 `;

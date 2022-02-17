@@ -6,9 +6,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding-top: 30px;
-
-  color: var(--grey2);
+  padding-top: 20px;
+  font-weight: 500;
 
   @media screen and (max-width: 768px) {
     width: 80%;
@@ -18,36 +17,22 @@ export const Container = styled.div`
     font-size: 18px;
   }
 
-  font-size: 30px;
-  letter-spacing: 2px;
-  line-height: 45px;
+  font-size: 18px;
+  line-height: 35px;
 
   p {
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-
-  p:first-of-type {
-    /* color: yellow; */
-  }
-  p:nth-of-type(2) {
-    /* color: red; */
-  }
-  p:nth-of-type(3) {
-    /* color: green; */
-  }
-  p:nth-of-type(4) {
-    /* color: blue; */
+    margin: 30px 0 0 30px;
   }
 
   a {
     text-decoration: none;
-    color: var(--blue);
+    color: var(--orange);
+    opacity: 70%;
     transition: 0.2s ease-out;
     position: relative;
     :hover {
       transition: 0.2s ease-out;
-      color: var(--darkblue);
+      opacity: 100%;
     }
   }
 
@@ -55,10 +40,6 @@ export const Container = styled.div`
     float: right;
     width: 300px;
     height: 450px;
-    margin: 50px 100px 20px 100px;
+    margin: 40px 30px 30px 30px;
   }
 `;
-
-interface Crossbar {
-  leftStart: boolean;
-}

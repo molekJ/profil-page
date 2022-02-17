@@ -4,6 +4,7 @@ export const MainContainerMobile = styled.div`
   display: none;
   height: 80px;
   text-transform: uppercase;
+
   @media screen and (max-width: 768px) {
     display: block;
   }
@@ -67,16 +68,13 @@ export const MainContainerWeb = styled.div`
   margin: 0 auto;
   width: 70vw;
   height: 100px;
-  z-index: 999;
-  position: sticky;
-  top: 0;
-  background-color: var(--dark);
-  color: var(--grey2);
+  color: var(--black);
   display: flex;
   flex-direction: row-reverse;
   font-size: 20px;
+  font-weight: 500;
   text-transform: uppercase;
-  border-bottom: 1px solid var(--grey2);
+  border-bottom: 1px solid var(--black);
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -94,17 +92,16 @@ export const NavMenuListWeb = styled.div`
     justify-content: center;
     position: relative;
     transition: all 0.3s ease-out;
+    cursor: pointer;
     &:hover {
-      color: var(--darkblue);
-      cursor: pointer;
       &::after {
         opacity: 1;
       }
     }
     &:after {
       width: 30px;
-      height: 2px;
-      background: var(--darkblue);
+      height: 1px;
+      background: var(--black);
       transition: 0.3s ease-out;
       content: "";
       opacity: 0;
@@ -115,6 +112,6 @@ export const NavMenuListWeb = styled.div`
   }
   a {
     text-decoration: none;
-    color: inherit;
+    color: black;
   }
 `;
