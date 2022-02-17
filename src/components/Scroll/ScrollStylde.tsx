@@ -26,4 +26,8 @@ export const ButtonToTop = styled.button<ButtonProps>`
     cursor: pointer;
     color: var(--black);
   }
+
+  @media screen and (max-width: 576px) {
+    right: -20px;
+  }
 `;

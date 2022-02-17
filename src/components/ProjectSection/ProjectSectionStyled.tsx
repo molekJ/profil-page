@@ -9,13 +9,25 @@ export const Container = styled.div`
   margin: 20px 20px 80px 20px;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  @media screen and (max-width: 576px) {
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+    margin: 20px 20px 80px 20px;
+  }
 `;
 
 export const TopContainer = styled.div`
   display: flex;
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+  }
 `;
 export const InfoContainer = styled.div`
   width: 50%;
+  @media screen and (max-width: 576px) {
+    width: 100%;
+  }
 `;
 
 export const HeaderInfo = styled.h3`
@@ -24,6 +36,11 @@ export const HeaderInfo = styled.h3`
   font-size: 24px;
   letter-spacing: 1px;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 576px) {
+    width: 100%;
+    margin-left: 10px;
+  }
 `;
 
 interface Parag {
@@ -42,18 +59,37 @@ export const Paragraph = styled.div<Parag>`
   text-overflow: ellipsis;
   overflow-wrap: break-word;
   cursor: pointer;
+
+  @media screen and (max-width: 576px) {
+    width: 100%;
+    -webkit-line-clamp: inherit;
+    padding-left: 10px;
+  }
 `;
 
 export const IconsSection = styled.div`
   align-items: center;
   display: flex;
+
   margin: 20px 0 30px 00;
   p {
     margin-right: 20px;
   }
-  img {
-  }
-  @media screen and (max-width: 1200px) {
+
+  @media screen and (max-width: 576px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+      img {
+        margin: 5px 3px;
+      }
+    }
   }
 `;
 
@@ -70,6 +106,7 @@ export const ImgWrapper = styled.div`
   }
 
   @media screen and (max-width: 576px) {
+    width: 100%;
   }
 `;
 
@@ -79,9 +116,6 @@ export const LinksWrapper = styled.div`
   justify-content: space-evenly;
   position: absolute;
   bottom: -70px;
-
-  @media screen and (max-width: 576px) {
-  }
 
   a {
     transition: all 0.3s ease-out;

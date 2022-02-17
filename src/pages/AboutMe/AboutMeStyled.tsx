@@ -8,20 +8,27 @@ export const Container = styled.div`
   margin: auto;
   padding-top: 20px;
   font-weight: 500;
-
-  @media screen and (max-width: 768px) {
-    width: 80%;
-  }
-
-  @media screen and (max-width: 576px) {
-    font-size: 18px;
-  }
-
   font-size: 18px;
   line-height: 35px;
+  @media screen and (max-width: 576px) {
+    width: 90vw;
+    div {
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+    }
+  }
+  @media screen and (max-width: 768px) {
+  }
 
   p {
     margin: 30px 0 0 30px;
+    @media screen and (max-width: 576px) {
+      margin: 30px 10px 0px 10px;
+      :last-of-type {
+        margin-bottom: 30px;
+      }
+    }
   }
 
   a {
@@ -41,5 +48,12 @@ export const Container = styled.div`
     width: 300px;
     height: 450px;
     margin: 40px 30px 30px 30px;
+    @media screen and (max-width: 576px) {
+      width: 200px;
+      height: 300px;
+      float: none;
+      align-self: center;
+      margin: 20px 0px 20px 0px;
+    }
   }
 `;

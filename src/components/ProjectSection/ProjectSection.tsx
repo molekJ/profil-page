@@ -54,11 +54,13 @@ export const ProjectSection: React.FC<Props> = ({
       </TopContainer>
       <IconsSection>
         <p>Technologies:</p>
-        {icons.map((icon, index) => {
-          return (
-            <img key={index} src={icon} alt="icon" width={36} height={36} />
-          );
-        })}
+        <div>
+          {icons.map((icon, index) => {
+            return (
+              <img key={index} src={icon} alt="icon" width={36} height={36} />
+            );
+          })}
+        </div>
       </IconsSection>
       <LinksWrapper>
         <a href={githubLink} target={"_blank"} rel="noreferrer">

@@ -11,7 +11,6 @@ export const MainContainerMobile = styled.div`
 `;
 
 export const LogoNav = styled.div`
-  background-color: var(--dark);
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -19,8 +18,6 @@ export const LogoNav = styled.div`
   a {
     margin-left: 2rem;
     font-size: 2rem;
-    background: none;
-    color: var(--grey2);
   }
 `;
 
@@ -29,16 +26,14 @@ interface NavMenuProps {
 }
 
 export const NavMenu = styled.div<NavMenuProps>`
-  background-color: var(--grey2);
+  z-index: 999;
+  background-color: var(--black);
   width: 250px;
   height: 100vh;
-  display: flex;
-  justify-content: center;
   position: fixed;
   top: 0;
   transition: 0.55s;
   padding-top: 50px;
-
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   a {
     text-decoration: none;
@@ -46,15 +41,16 @@ export const NavMenu = styled.div<NavMenuProps>`
   p {
     padding: 18px 0px 18px 20px;
     height: 60px;
-    color: var(--dark);
+    color: var(--white);
     font-size: 18px;
+    font-weight: 500;
     margin: 0 20px;
     transition: 0.3s ease-out;
+    border-radius: 20px;
     :hover {
       cursor: pointer;
-      background-color: var(--dark);
-      opacity: 80%;
-      color: var(--grey2);
+      background-color: var(--white);
+      color: var(--black);
       transition: 0.3s ease-out;
     }
   }
