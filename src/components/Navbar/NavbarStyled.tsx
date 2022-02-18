@@ -30,16 +30,16 @@ export const NavMenu = styled.div<NavMenuProps>`
   z-index: 999;
   background-color: var(--black);
   width: 250px;
-  height: 100vh;
+  height: 110vh;
   position: fixed;
   top: 0;
   transition: 0.55s;
   padding-top: 50px;
+  list-style-type: none;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
-  a {
-    text-decoration: none;
-  }
-  p {
+  color: var(--white);
+
+  li {
     padding: 18px 0px 18px 20px;
     height: 60px;
     color: var(--white);
@@ -48,6 +48,7 @@ export const NavMenu = styled.div<NavMenuProps>`
     margin: 0 20px;
     transition: 0.3s ease-out;
     border-radius: 20px;
+
     :hover {
       cursor: pointer;
       background-color: var(--white);
@@ -55,10 +56,10 @@ export const NavMenu = styled.div<NavMenuProps>`
       transition: 0.3s ease-out;
     }
   }
-`;
-
-export const NavMenuList = styled.ul`
-  width: 100%;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 export const MainContainerWeb = styled.div`

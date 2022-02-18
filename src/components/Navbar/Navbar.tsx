@@ -3,12 +3,11 @@ import {
   MainContainerMobile,
   LogoNav,
   NavMenu,
-  NavMenuList,
   MainContainerWeb,
   NavMenuListWeb,
 } from "./NavbarStyled";
 import { FaBars } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { NavbarData } from "./NavbarData";
 
 export const Navbar: React.FC = () => {
@@ -27,17 +26,22 @@ export const Navbar: React.FC = () => {
           </Link>
         </LogoNav>
         <NavMenu sidebar={sidebar} onClick={showBar}>
-          <NavMenuList>
-            {NavbarData.map((icon, index) => {
-              return (
-                <li key={index}>
-                  <Link to={icon.path}>
-                    <p>{icon.title}</p>
-                  </Link>
-                </li>
-              );
-            })}
-          </NavMenuList>
+          {NavbarData.map((icon, index) => {
+            return (
+              <li key={index}>
+                <NavLink
+                  to={icon.path}
+                  activeStyle={{}}
+                  exact
+                  style={(isActive) => ({
+                    opacity: isActive ? "100%" : "70%",
+                  })}
+                >
+                  <p>{icon.title}</p>
+                </NavLink>
+              </li>
+            );
+          })}
         </NavMenu>
       </MainContainerMobile>
       <MainContainerWeb>
@@ -45,9 +49,16 @@ export const Navbar: React.FC = () => {
           {NavbarData.map((icon, index) => {
             return (
               <li key={index}>
-                <Link to={icon.path}>
+                <NavLink
+                  to={icon.path}
+                  activeStyle={{}}
+                  exact
+                  style={(isActive) => ({
+                    fontWeight: isActive ? "bold" : "normal",
+                  })}
+                >
                   <p>{icon.title}</p>
-                </Link>
+                </NavLink>
               </li>
             );
           })}
