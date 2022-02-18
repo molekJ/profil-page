@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/profil-page/static/js/main.d212b564.chunk.js",
-    "main.js.map": "/profil-page/static/js/main.d212b564.chunk.js.map",
+    "main.js": "/profil-page/static/js/main.a6e27622.chunk.js",
+    "main.js.map": "/profil-page/static/js/main.a6e27622.chunk.js.map",
     "runtime-main.js": "/profil-page/static/js/runtime-main.a6de9d69.js",
     "runtime-main.js.map": "/profil-page/static/js/runtime-main.a6de9d69.js.map",
-    "static/js/2.3e158cc1.chunk.js": "/profil-page/static/js/2.3e158cc1.chunk.js",
-    "static/js/2.3e158cc1.chunk.js.map": "/profil-page/static/js/2.3e158cc1.chunk.js.map",
+    "static/js/2.d52f2840.chunk.js": "/profil-page/static/js/2.d52f2840.chunk.js",
+    "static/js/2.d52f2840.chunk.js.map": "/profil-page/static/js/2.d52f2840.chunk.js.map",
     "index.html": "/profil-page/index.html",
-    "static/js/2.3e158cc1.chunk.js.LICENSE.txt": "/profil-page/static/js/2.3e158cc1.chunk.js.LICENSE.txt",
+    "static/js/2.d52f2840.chunk.js.LICENSE.txt": "/profil-page/static/js/2.d52f2840.chunk.js.LICENSE.txt",
     "static/media/bakery.f0ffd15c.jpg": "/profil-page/static/media/bakery.f0ffd15c.jpg",
     "static/media/bootstrap.f3938ebe.svg": "/profil-page/static/media/bootstrap.f3938ebe.svg",
     "static/media/css.3ec32022.svg": "/profil-page/static/media/css.3ec32022.svg",
@@ -29,7 +29,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a6de9d69.js",
-    "static/js/2.3e158cc1.chunk.js",
-    "static/js/main.d212b564.chunk.js"
+    "static/js/2.d52f2840.chunk.js",
+    "static/js/main.a6e27622.chunk.js"
   ]
 }
