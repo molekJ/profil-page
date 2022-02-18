@@ -15,17 +15,26 @@ export const Container = styled.div`
     padding: 20px 0px 0px 0px;
     margin: 20px 20px 80px 20px;
   }
+  @media screen and (min-width: 577px) {
+    width: 90%;
+  }
+  @media screen and (min-width: 769px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1400px) {
+    width: 45%;
+  }
 `;
 
 export const TopContainer = styled.div`
   display: flex;
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 `;
 export const InfoContainer = styled.div`
   width: 50%;
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 `;
@@ -52,7 +61,6 @@ export const Paragraph = styled.div<Parag>`
   line-height: 20px;
   margin-bottom: 30px;
   padding: 0 10px;
-  -webkit-line-clamp: ${({ isEllipsed }) => (isEllipsed ? "inferit" : "3")};
   -webkit-box-orient: vertical;
   display: -webkit-box;
   overflow: hidden;
@@ -64,6 +72,9 @@ export const Paragraph = styled.div<Parag>`
     width: 100%;
     -webkit-line-clamp: inherit;
     padding-left: 10px;
+  }
+  @media screen and (min-width: 769px) {
+    -webkit-line-clamp: ${({ isEllipsed }) => (isEllipsed ? "inferit" : "5")};
   }
 `;
 

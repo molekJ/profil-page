@@ -5,7 +5,7 @@ export const AboutMe = () => {
   return (
     <Container>
       <div>
-        <img src={molek} />
+        <img src={molek} alt="portrait drawing" />
         <p>
           My name is Jakub, I am 31 years old and I live in Biała Podlaska
           (voivodeship Lubelskie).

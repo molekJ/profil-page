@@ -13,4 +13,10 @@ export const Container = styled.div`
   @media screen and (max-width: 576px) {
     width: 90vw;
   }
+  @media screen and (min-width: 577px) {
+    width: 80vw;
+  }
+  @media screen and (min-width: 769px) {
+    width: 70vw;
+  }
 `;

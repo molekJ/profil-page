@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   min-height: calc(100vh - 200px);
-  width: 70vw;
+  /* width: 70vw; */
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -15,19 +15,31 @@ export const Container = styled.div`
     div {
       display: flex;
       flex-direction: column;
-      /* align-items: center; */
     }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 577px) {
+    width: 90vw;
+  }
+  @media screen and (min-width: 769px) {
+    width: 70vw;
   }
 
   p {
-    margin: 30px 0 0 30px;
     @media screen and (max-width: 576px) {
       margin: 30px 10px 0px 10px;
       :last-of-type {
         margin-bottom: 30px;
       }
+    }
+    @media screen and (min-width: 577px) {
+      margin: 30px 10px 0px 10px;
+
+      :last-of-type {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 769px) {
+      margin: 30px 0 0 30px;
     }
   }
 
@@ -54,6 +66,10 @@ export const Container = styled.div`
       float: none;
       align-self: center;
       margin: 20px 0px 20px 0px;
+    }
+    @media screen and (min-width: 577px) {
+      width: 250px;
+      height: 375px;
     }
   }
 `;

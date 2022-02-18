@@ -16,6 +16,7 @@ export const LogoNav = styled.div`
   justify-content: space-between;
   align-items: center;
   a {
+    color: var(--black);
     margin-left: 2rem;
     font-size: 2rem;
   }

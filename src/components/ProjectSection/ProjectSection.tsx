@@ -53,7 +53,7 @@ export const ProjectSection: React.FC<Props> = ({
         </ImgWrapper>
       </TopContainer>
       <IconsSection>
-        <p>Technologies:</p>
+        <p>Technologies used:</p>
         <div>
           {icons.map((icon, index) => {
             return (

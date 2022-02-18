@@ -5,8 +5,8 @@ export const MyProjects = () => {
   return (
     <>
       <Container>
-        {ProjectsData.map((project) => {
-          return <ProjectSection {...project} />;
+        {ProjectsData.map((project, index) => {
+          return <ProjectSection {...project} key={index} />;
         })}
       </Container>
     </>
