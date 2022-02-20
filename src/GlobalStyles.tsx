@@ -13,8 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     --orange: #ff801a;
 }
 body {
-    min-width: 100px;
-    min-height: 100vh;
+    min-width: 300px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: var(--black);

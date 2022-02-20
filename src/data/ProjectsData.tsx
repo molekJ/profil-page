@@ -32,7 +32,7 @@ export const ProjectsData = [
   {
     title: "ToDoList",
     description:
-      "Classic of the classics. The simple application in which we can add our scheduled tasks. I used LocalStorage - tasks are saving automatically and loading after refresh.",
+      "Typical beginners project.. The simple application in which we can add our scheduled tasks. I used LocalStorage - tasks are saving automatically and loading after refresh.",
     lightBg: true,
     img: todolist,
     alt: "todolist application dashboard",

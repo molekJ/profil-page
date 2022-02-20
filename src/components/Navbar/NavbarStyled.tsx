@@ -72,7 +72,7 @@ export const MainContainerWeb = styled.div`
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid var(--darkgrey);
   @media screen and (max-width: 768px) {
     display: none;
   }

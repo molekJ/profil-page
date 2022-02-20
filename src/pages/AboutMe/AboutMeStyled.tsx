@@ -8,7 +8,7 @@ export const Container = styled.div`
   margin: auto;
   padding-top: 20px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 35px;
   @media screen and (max-width: 576px) {
     width: 90vw;
