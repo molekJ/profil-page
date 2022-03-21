@@ -4,6 +4,7 @@ import diet from "../images/diet.jpg";
 import weather from "../images/weather.jpg";
 import todolist from "../images/todolist.jpg";
 import quiz from "../images/quiz.jpg";
+import posts from "../images/posts.jpg";
 
 import css from "../icons/css.svg";
 import html from "../icons/html.svg";
@@ -15,8 +16,21 @@ import jira from "../icons/jira.svg";
 import i18next from "../icons/i18next.svg";
 import reactRouterDom from "../icons/react-router-dom.svg";
 import bootstrap from "../icons/bootstrap.svg";
+import sass from "../icons/sass.svg";
 
 export const ProjectsData = [
+  {
+    title: "Posts",
+    description:
+      "This is an app that uses JSONPlaceholder - free online REST API. You can load posts, comments and see theirs creators. I also used an avatar generator. ",
+    lightBg: false,
+    img: posts,
+    alt: "post application dashboard",
+    leftStart: false,
+    githubLink: "https://github.com/molekJ/recruitment-task-vsc",
+    deployment: "https://molekj.github.io/recruitment-task-vsc/#/",
+    icons: [html, css, js, react, ts, reactRouterDom, bootstrap, sass],
+  },
   {
     title: "Quiz",
     description:
